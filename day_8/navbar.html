@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+
+    <style>
+
+        .main{
+            min-height: 100vh;
+            border: 1px solid black;
+        }
+        .navbar{
+            background-color: rgb(0, 7, 3);
+            display: flex;
+            height: 80px;
+            justify-content: flex-end;
+        }
+        .child{
+            color: aliceblue;
+            font-size: 40px;
+            margin: 15px;
+        }
+        .child:hover{
+                font-size: 45px;
+        }
+        .profile{
+            margin-right: auto;
+        }
+        img{
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="navbar">
+        <div class="profile child"> <img src="../day_6/medias/OIP.jpg" alt=""> </div>
+        <div class="home child">Home</div>
+        <div class="about child">About</div>
+        <div class="service child">Services</div>
+        <div class="contact child">Contact</div>
+
+    </div>
+    </div>
+</body>
+</html>
