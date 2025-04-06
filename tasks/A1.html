@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Azeez - Web Designer</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #272827;
+    color: #ffffff;
+    height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #111111;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #888;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+ a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+ a:hover {
+    color: #fff;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px;
+    height: calc(100vh - 80px);
+  }
+  
+  .intro {
+    flex: 1;
+  }
+  
+  .intro h1{
+    font-size: 3.2rem;
+    line-height: 1.4;
+    color: #ffffff;
+  }
+  
+  .highlight {
+    color: #f87171;
+  }
+  
+  .stack {
+    margin-top: 15px;
+    color: #888;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    
+  }
+  
+  button {
+    margin-top: 30px;
+    padding: 12px 24px;
+    border: 2px solid #f87171;
+    background: transparent;
+    color: #f87171;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #f87171;
+    color: #fff;
+  }
+  
+  .image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .image img {
+    height: 350px;
+    filter: grayscale(100%) contrast(110%);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Shaik Mohammed Abdul Azeez</div>
+    <nav>
+      <ul>
+        <li><a href="#">ABOUT ME</a></li>
+        <li><a href="#">SKILLS</a></li>
+        <li><a href="#">MY WORK</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h1>Hi,<br>I'm <span class="highlight">Azeez</span>,<br>Web Designer.</h1>
+      <p class="stack">CSS / JavaScript / React</p>
+      <button>CONTACT ME</button>
+    </div>
+    <div class="image">
+      <img src="./WhatsApp Image 2025-04-06 at 3.47.27 PM.jpeg" alt="Azeez Photo"/>
+    </div>
+  </main>
+</body>
+</html>
