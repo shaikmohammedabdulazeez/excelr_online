@@ -1,0 +1,1592 @@
+Full stack -->front end + backend (database)
+
+frontend :
+     html -->hyper text markup language
+     css-->cascading style sheet
+     js-->javascript
+
+backend :
+     python
+     java
+     c++
+
+databases: mysql, oracle, mongodb
+
+
+
+
+web technologies:
+   the technology /tools used to create /develop webpages and web applications.
+
+------------------------------------------------------------
+Html-->hyper text markup language
+    -->used to create the structure of the webpage
+    -->the file must have .html extension
+    -->is introduced by tim berners-lee in 1993
+    -->is a markup language
+    -->is a combination of tags and attributes
+
+tag-->tag is a keyword which is enclosed in  ankle brackets < tagName >
+   --> are two types 
+      1.paired tag
+      2.unpaired tag
+  
+1.paired tag/ container tag:
+
+               <html> --opening tag
+
+               --paired tags---
+               
+               </html> -- closing tag
+
+2.unpaired tag/ non container tag/self closing tag/empty tag:
+
+    eg: <hr>
+
+
+----------------------------------------------------------
+
+list :(any content in sequence order) 
+
+1.ordered list
+2.unordered list
+3.declaration list
+
+
+1.ordered list :
+    -- a list maintaining the order
+    --<ol></ol>
+    --default value is number 
+    --<ol type="A"> </ol>-- type attribute used to change the default value
+    --type :  a, A, i , I
+    --custom order -- start attribute
+    --reverse order-- reversed attribute
+
+2.unordered list :
+    --<ul></ul>
+    --default value is disc
+    --<ul type="square"> </ul>-- type attribute used to change the default value
+    --type : disc, circle, square
+
+
+3.declaration list/ definition list :
+      --<dl></dl>
+      --<dt></dt>-- definition title /term
+      --<dd></dd> -- definition description/data
+
+
+
+
+
+nested list :
+
+      --list inside another list
+
+-------------------------------------------------------
+
+attribute : 
+     -- it defines additional information of a tag
+     --it is a property of a tag
+     --it is written inside the opening tag
+     ex: type , start, reversed, title
+
+
+---------------------------------------------------------
+
+extensions :
+     vscode icon
+     live server
+
+DAY-3
+
+what are different headings in html
+
+       <h1>.......<h6>
+
+
+--------------------------------------------------
+what is css
+
+ css-cascading style sheet 
+     -used to style /design web pages
+     - to apply css to an element we need to use style attribute 
+
+how to use css (internal,external,and inline)
+1.Inline css
+     syntax :
+       < style ="property: value  ; property2: value2"> content </>
+   -used to style specific element 
+
+2.Internal css
+  syntax :
+
+  <style>
+   selector{
+       property: value ;
+       property2: value2
+   }
+  </style>
+  -used to style multiple elements
+
+3.external css
+ 1.create a css file with .css extension
+ 2.link the css file to the html file
+ 3.used to style multiple pages (large scale projects)
+ syntax:
+   <html>
+   <head>
+   
+   <link rel="stylesheet" href="filename.css">
+   </head>
+   </html
+
+
+
+
+  inline css> internal css> external css
+-----------------------------------------------------------------------
+
+what is selector
+element selector , id selector , class selector 
+------------------------------------------------------------------------------
+what are inline elements
+what are block level elements
+how to convert "inline to block" and viceversa
+
+based on display we have two type of elements 
+
+1.block level elements
+2.inline elements
+
+1.block level --- the element will occupy entire width of the page
+                  eg:  p, h1, h2, h3, h4, h5, h6
+2.inline --the element will occupy its respective space in the page
+                  eg: i , small , 
+
+
+to change the display property of an element we use display attribute
+
+<p style="display:inline"></p> --- inline 
+
+
+------------------------------------------------------------------------------
+what is margin
+
+   the space around the border
+   - margin attribute
+   syntax:
+
+   h1{
+       margin: 20px(all sides top bottom left right)
+       margin: 20px(top/bottom) 15px(left/right)
+       margin: 20px(top) 30px(right) 40px(bottom) 50px(left)
+
+       margin-top:
+       margin-bottom:
+       margin-right:
+       margin-lef;
+   }
+
+   shorthand : 
+    
+    margin : top right bottom left
+
+    -----------------------------------------------------------
+what is padding
+
+  -- space around the content /space between content and border
+  --padding attribute
+
+syntax:
+ h1{
+       padding: 20px(all sides top bottom left right)
+       padding: 20px(top/bottom) 15px(left/right)
+       padding: 20px(top) 30px(right) 40px(bottom) 50px(left)
+
+       padding-top:
+       padding-bottom:
+       padding-right:
+       padding-lef;
+   }
+
+   shorthand : 
+    
+    padding : top right bottom left
+
+---------------------------------------------------------------
+what is border
+border: a line around the text
+-- border attribute
+
+syntax :
+h1{    
+       border-style:
+       border-color:
+       corder-size:
+       border: size(thickness) style color;(all sides)
+
+       border-top:
+       border-bottom:
+       border-left:
+       border-right:
+       border-radius:  for  rounded corner 
+}
+
+style :
+  1.solid
+  2.dotted
+  3.double
+  4.dashed
+  5.groove
+  6.ridge
+  7.inset
+  8.outset
+
+----------------------------------------------------------------
+
+box model in css
+  
+  it describes how elements are structured and spaced in a web page
+
+
+structure;
+
+   content(text/image/video) 
+   ---->padding(space around  the content)
+   ----->border(outline around the content)
+   ------>margin(space outside the border, it helps to separates elements)
+
+
+
+
+
+
+https://validator.w3.org/ -- to check markup code
+
+DAY-4
+div-block level element
+
+span-inline level element
+---------------------------------------
+block --inline
+
+block level element -->div , p , h1 , h2 , h3 , h4 , h5 , h6 , ul , ol , li , dl , dt , dd 
+                    -->it will occupy entire width
+                    -->it will start in new line
+                    -->it respects height and width properties
+                    -->it respects margin and padding properties
+                    convert: display:inline
+
+inline level element -->i , span , b,small
+                    -->it will occupy required space
+                    -->it wont respect height and width properties
+                    -->it wont respect margin and padding properties
+                    -->convert: display:block
+
+                    display :inline-block(it is inline element but respects height , width , margin , padding like block level element)
+------------------------------------------------------------------
+
+box-sizing :
+ box-sizing is a property apply for all elements
+ --default value is content-box
+ --it is used to define the width and height of an element
+
+
+ eg: width: 100px;
+     height: 100px;
+     border:2px ;
+     padding :10px;
+
+     box-sizing: content-box;
+     100+2+2+10+10 = 144px;
+
+     box-sizing:border-box;
+     100+-+-+-+-= 100px
+
+     --------------------------------------------------------------
+     
+
+
+DAY-5
+Table and its tags and its attributes 
+
+<table></table -- used to create table
+<caption></caption>-- to provide caption of the table
+<thead></thead> -- used to create head of the table
+<tbody></tbody> -- used to create body of the table
+<tfoot></tfoot> --used to create footer of the table
+
+<th></th>  --used to write head content(strong text)
+<td></td>  --used to write body content
+
+
+rowspan and colspan -- these are the properties of th and td tags
+rowspan-- used to merge the rowspan
+colspan--used to merge the column
+
+border , cellpadding ,cellspacing , width, height, align, 
+--------------------------------------------------------
+Pseudo element and Pseudo class
+
+pseudo element :
+       used to select an  specific part of an element 
+       indicating ::(double colon)
+       ex :   
+          ::first-letter  , ::first-line  , ::selection  ,:: before  , ::after , ::marker
+pseudo class  :
+      used to select based on its state
+      indicating with :(colon)
+      ex :
+       :link  , :active , :visited , :hover 
+
+-----------------------------------------------------------
+
+DAY-8
+<h1>flex</h1>
+    <hr>
+    <p>it is used to align elements</p>
+    <p>it is used to distribute space between elements</p>
+    <p>it is used to distribute space around elements</p>
+    <p>It will arrange elements in cross axis and main axis</p>
+    <p>flex container is main division of flex</p>
+    <p>flex items are child of flex container</p>
+    <p>flex container is used to wrap the flex items</p>
+
+
+    <p>"display : flex" is used to make flex container</p>
+    <p>the default direction is row(left to right) </p>
+    <p>"flex-direction : row-reverse; row; column; column-reverse" is used to change the direction</p>
+  
+
+
+row (left to right)  x axis(main axis)  y axis(cross axis)
+column(top to bottom) y axis(main axis) x axis(cross axis)
+
+
+
+parent properties :
+
+
+justify-content : it is used to align main axis
+                 flex-start(default) ; flex-end; centre; space-around; space-between;space-evenly 
+
+
+align items : it is used to align cross axis
+                 flex-start(default) ; flex-end; centre; 
+
+align-content: It is used to align when there is extra space in the cross axis ,similar to 'justify-content' aligns individual items 
+                 flex-start(default) ; flex-end; centre; space-around; space-between;space-evenly 
+
+gap: it used to provide gap between the elements 
+row-gap: it is used to provide gap between row elements
+column-gap: it is used to provide gap between column elements
+
+
+child properties/flex items:
+
+
+flex-shrink:  it is used to shrink elements according to width
+    default-1
+    0-items wont shrink
+flex-grow: it is used to grow element size according to width
+    default-0
+    
+order:it is used to re arrange the order of flex-items
+
+justify-self - to provide justify content property , specifically to a flex item
+align-self - to provide align items property , specifically to a flex item
+------------------------------------
+DAY-11
+Css Positions:
+
+    1.static
+    2.relative
+    3.absolute
+    4.fixed
+    5.sticky
+
+
+1.static:
+    position: static;
+    -default value
+    -top,right,left,bottom are not set
+
+2.relative:
+    position: relative;
+    -relative to its normal positions
+    -top,right,left,bottom are set
+    -other elements are not affected by this element
+    -can be used to move an element from its normal position
+
+z-index:it is used to specify the stacking order of elements
+    when overlapping each other
+    default-0
+    higher value means higher z-index
+    - used for relative, absolute, fixed, sticky
+
+3.fixed
+    position: fixed;
+    -fixed to the browser window
+    -top,right,left,bottom are set
+    -other elements are not affected by this element
+    -can be used to move an element from its normal position
+    -the element remains in the same position even if the page is scrolled
+4.sticky
+    position: sticky;
+    -sticky to the browser window
+    -top,right,left,bottom are set
+    -other elements are not affected by this element
+    -can be used to move an element from its normal position
+    -the element remains in the same position even if the page is scrolled
+    -it is a combination of relative and fixed
+5.absolute
+    position: absolute;
+    -absolute to its normal positions
+    -top,right,left,bottom are set
+    -other elements are not affected by this element
+    -can be used to move an element from its normal position
+    -it depends on inherited element
+    -it need to assign for child elements when the parent is relative, 
+    if parent position is not relative then it set with root element  
+
+
+
+
+
+
+task2 :   https://headless-pizza.netlify.app/
+------------------------------------------------
+DAY-15
+javascript:
+   it is a scripting language
+   it is used to create dynamic and interactive webpages
+   it is a client side language
+   it is used to add behavior and functionalities to webpages
+   It is synchronous language/it is executed line by line
+   It is case sensitive
+
+javascript also used in:
+              1.Angular
+              2.React
+              3.Vuejs
+              4.NodeJs
+
+js current version : ECMAScript 13 (ES13)
+ECMA- european computers manufacturer association
+
+
+
+if we want to create javascript 
+        _____.js extension
+
+-----------------------------------------
+we can include js in 3 ways:
+
+inline js
+internal js
+external js
+
+
+-----------------------------
+
+inline js:
+
+<button script=""></button>
+
+internal js:
+
+<script></script>
+
+external js:
+
+<script src="filename.js"></script>
+
+
+------------------------------------------------------
+
+operators in javascript:
+
+
+1.arithmetic operators:+ ,-,*,/,%,** ,++,--
+
+2.relational operators:<,>,<=,>=,==,!=,===
+
+3.logical operators: &&,||,!
+
+4.assignment operators: +=,-=,/=,*=,%=,**=
+
+5.ternary operators:operand1?operand2:operand3
+                   condition?value_if_true:value_if_false
+
+6.bitwise operators: &,|,^,~,<<,>>
+
+7.typeof operator: typeof(data)
+---------------
+DAY-16
+Tokens :
+    1.identifiers
+    2.keywords
+    3.literals/values
+    4.data types
+    5.operators
+    6.Variables
+
+
+Identifiers: providing names
+    1.variable names
+    2.function names
+    3.class names
+
+
+
+variable/function names:
+    1.cannot start with number
+    2.cannot start with special characters(except _ and $)
+    3.cannot contain space
+    4.cannot be reserved(inbuilt) keywords
+    5.should be meaningful
+    6.should be short
+
+
+
+Ex:
+    a=10;(correct)
+    1a=10;(x)
+    _a=10;(correct)
+    $a=10;(correct)
+
+
+====================================================
+keywords:
+    reserved words-if else for while etc
+
+====================================================
+
+Literals/value/data:
+    1.Number 
+        10, -10, 10.0
+    2.String
+        -group of characters
+        -denoted with double quotes(""),(''),
+        -template literals/back ticks(``)- used for interpolation
+    3.Boolean
+        -true or false
+    4.Null
+    5.Undefined
+    6.Symbol
+    7.array
+    8.object
+
+======================================================
+
+Data types:
+    1.primitive data types-immutable(directly stores in memory)
+            1.number -- 10, -10,10.0
+            2.String-- "" , '' , ``
+            3.boolean-- true or false
+            4.null--no vlaue-object type
+            5.undefined -declared variable without value
+            6.symbol - symbol("id")
+            7.bigint-234444444444444444444444444444444444444444444444444n
+
+    2.non primitive data types -mutable/ stores data in reference
+        1.array
+        2.object
+        3.Map
+        4.set 
+        5.Date 
+        6.Regexp
+
+
+======================================================================= 
+
+    variables:
+
+        1.variable declaration:
+            var a,
+            let b,
+            const c,
+        2.variable initialization:
+            var a=10; let b=20; let c=30;
+        3.variable reinitialization:
+            var a=20;   let b=30;
+                a=30;       b=40;
+        4.variable redeclaration:
+            var a=10;
+            var a=30;
+
+
+-----------------------
+DAY-17
+
+Functions:
+    --it is a block of code that performs a specific task
+    --it is a re-usable block of code
+    --it is a collection of statements that performs a task
+------------------------------------------------------
+why functions
+    1.code reusability
+    2.code maintainability
+    3.code readability
+    4.code Organization
+    5.Scalability
+ 
+--------------------------------------------------
+types:
+        function declaration
+        function expression
+        arrow functions
+        callback functions
+        constructor functions
+        generator functions
+        IIFE
+        higher order functions
+
+==============================================================
+
+1.function declaration/named function/general function
+-----------------------------------------------------
+
+syntax:
+ function functionName/Identifier(){
+     //set of sentences that performs a task
+ }
+
+
+ //passing arguments 
+ function funct_Name(arg1, arg2.......){
+     
+ }
+ funct_Name(arg1, arg2.......);
+
+
+ //return statement
+ function funct_Name(arg1, arg2.......){
+     return result;
+ }
+ let result=funct_Name(arg1, arg2.......);
+
+==============================================================
+
+2.function expression
+------------------
+
+syntax: 
+       let result = function(arg1, arg2.......){
+
+          return result;  
+        }
+
+        result(arg1,arg2.....);
+       
+===============================================================
+3.arrow functions:
+------------------
+          shorter syntax than regular function
+syntax:
+
+    let data=  ()=>{
+
+         }
+
+ex:   (ar1,ar2)=>{
+       //specific task
+      }
+
+=============================================================
+4.constructor function:
+    -it is a special function that is used to create objects
+
+syntax:
+ 
+        function Person(name, age){
+            this.name=name;
+            this.age=age;
+        }
+
+      const  data=new Person('ram',20);
+
+=============================================================
+5.Call back function :
+    -it is a function that is passed as an argument to another function
+    -it is a function that is called by another function
+
+
+syntax:
+
+    function functionName(arg1, arg2 , func_2 , func_3){
+        //set of sentences that performs a task
+    }
+
+    functionName(arg1,arg2, func_2, func_3);
+
+=============================================================
+6.Generator function:
+    -it is a function that is used to create iterators/generators
+
+syntax:
+
+    function* functionName(){
+    yield 1;
+    .
+    .
+    .
+    yield n;
+}
+
+========================================================================
+7.IIFE:
+    -immediately invoked function expression
+    -it is a function that is called immediately after it is defined
+
+syntax:
+
+   (
+       function(){
+          //set of sentences that performs a task 
+       }
+   )();
+
+=============================================================
+8.higher order functions:
+    -it is a function that is passed as an argument to another function
+    -takes a function as an argument and returns a function
+    
+syntax:
+    function functionName(arg1, arg2 , func_2 ){
+        //set of sentences that performs a task
+        return func_2(arg1,arg2);
+    }
+
+-----------------------------------
+-------------------------------------
+DAY-18
+what are callback functions
+           -- it is a function that is passed as an argument to another function
+
+callback hell(pyramid of doom)
+---------------------------------
+   -it is a situation where we have multiple callbacks inside a callback(nested callbacks)
+   -hard to read       
+   -hard to maintain/modify 
+   -hard to debug
+   -this usually happens when we have to perform multiple asynchronous operations
+   
+-----------------------------------------------------------------------------
+promises:
++++++++++++++++
+ - a promise in js is an object that represents the outcome of an asynchronous operation
+ - it is used to handle the success and failure of an asynchronous operation
+ - states in promises :
+     1. pending-initial state
+     2. fulfilled-the operation was successful
+     3. rejected-the operation failed
+ - we can use then() function to handle the success and failure of a promise
+ - we can use catch() function to handle the failure of a promise
+ - we can use finally() function to handle the success and failure of a promise
+
+-----------------------------------------------------------------------------
+async:
++++++++++++++++
+
+   async functions are functions that return a promise
+   async functions are used to handle asynchronous operations
+
+syntax:
+
+async function functionName(){
+    
+}
+await:
++++++++++++++++
+
+   await keyword is used to wait for a promise to resolve
+   await is used inside an async function
+   it will make the code synchronous
+
+syntax:
+
+async function functionName(){
+    await functionName();   
+}
+---------------------------------------------------------
+Promise.all()
+    - it is used to wait for all the promises to resolve
+    - it returns a promise
+    - it is used to handle multiple promises(asynchronous operations)
+    -if all successful it returns an array of values
+    -if any one fails it returns an   errors
+ 
+-------------------------------------------------------------------------
+Promise.race()
+   - it is used to wait for the first promise to resolve
+   - it returns a promise
+   - it is used to handle multiple promises(asynchronous operations)
+   - 
+
+---------------------------------------------------------------------------
+
+Promise.allSettled()
+   -it is used to wait for all promises to resolve
+   - it returns a promise
+   - it is used to handle multiple promises(asynchronous operations)
+   - wait for all promises and tells
+                      1.which one success
+                      2.which one is fails
+-------------------------------------------------------------------------------------
+
+feature                     .all                   .race               .allSettled   
+wait for all promises       yes                     no                   yes
+fails fast                  on first reject         if first rejects     never fails
+use case                    all must succeed        first win            get all outcomes
+return                      array                   first value          all results with status
+
+----------------------------------------------------------------------------------------------
+JQuery:
+      JQuery is fast , small js library
+      use: dom manipulation
+           event handling
+           animation
+           ajax(api - http requests)
+      -- it is easier when compared with js
+
+JQuery Integration:
+      1.cdn
+Examples on JQuery
+
+
+-------------------------------
+DAY-19
+object :
+    -it is a collection of related data and functions
+    -it is a collection of properties and methods
+    -it is a collection of variables and functions
+    -it indicates real time entity
+ex:
+       dog :
+            data/properties/variables:name ,color, age ,breed ,height
+            actions/behavior/functions/methods:barking, eating, running,jumping
+       function dog(variable_1, variable_2){
+            this.name=variable_1;
+            this.color=variable_2;
+            this.propertyName=variableName;
+            
+            function barking(){
+                
+            }
+       }
+
+ Note : in js every object has a prototype
+ ----------------------------------------------------------------------------      
+
+Creation of Objects:
+
+         1.constructor function (before es6) 
+         2.class (after es6)
+         3.object literal
+         4.Object.create()
+
+===============================================================================
+
+class:
+    -it is a template for creating objects
+    -it is a blueprint for creating objects
+
+creation :
+     1.class declaration
+     2.class expression
+
+1.class declaration :
+----------------------------------------------------------------------
+        class className{
+                    constructor(var1, var2....){
+                    this.var1=var1;
+                    this.var2=var2;
+                    }
+                    function f1(){
+                        
+                    }
+        }
+
+2.class expression :
+----------------------------------------------------------------------
+        let className=new class{
+                   constructor(var1, var2....){
+                    this.var1=var1;
+                    this.var2=var2;
+                    }
+                    function f1(){
+                        
+                    }
+        }
+
+
+==========================================================================
+
+object literal :
+---------------
+
+let obj={
+    'propertyName'='value',
+    'propertyName'='value',
+}
+
+======================================================================
+
+Object.create():
+----------------
+        const obj1={
+            'propertyName'='value',
+        }
+
+        const obj2=Object.create(obj1);
+=====================================================================
+
+prototype:
+    -it is a property of an object
+    -it allows other object to inherit properties and methods
+    -it is used to add new properties and methods to an object
+    -this created a prototype chain between objects
+                   :allows objects to share properties and methods
+
+prototype chaining:
+    -it is a chain of objects
+    -we can achieve prototype chaining by using Object.create() method
+    -it is used to create a prototype chain between objects
+    -it allows objects to share properties and methods
+    how:
+        let obj1={
+            'propertyName'='value',
+        }
+        let obj2=Object.create(obj1);
+
+        let obj3=Object.create(obj2);
+    -setting prototype of obj1 to obj2 will allow obj2 to inherit properties and methods from obj1
+    -------------------------------------------
+    DAY-20
+    JSON Objects:
+--------------------------------------------------------------------
+     -javascript object notation
+     -used to store(nosql) and exchange data(client<->sever)
+     -it is a lightweight data interchange format
+     -it is a text based format
+     -it is a collection of key/value pairs
+
+
+ex:
+
+{
+   "key1":"value1" ,
+   "key2":"value2"
+}
+
+
+                 js object                        JSON object
+-------------------------------------------------------------------
+syntax          flexible and dynamic            fixed/strict and static
+keyQuotes       optional                        mandatory
+
+
+
+Json Rules :
+ -json object must be in curly brackets({})
+ -json object contains collection of key and value pairs
+ -key must be in double quotes
+ -value can be in double quotes or single quotes(based on data type)
+ -string must be in double quotes
+ -key name must be unique
+----------------------------------------------------------------------
+ 
+ Json Structure:
+    1.Objects(like dictionaries/maps) 
+    2.Arrays(like lists)
+    3.Nested Objects
+----------------------------------------------------------------
+JSON Arrays:
+    -it is a collection of values
+    -it is a list of values
+
+    ex: [1,2,3,4,5,6,7,8,9,10]
+        ["abc","xyz","pqr","mno","lmn","jkl","hij","def","ghi","abc"]
+        [
+            {},{},{}
+        ]
+------------------------------------------------------------------
+Accessing data from json objects:
+    -it is same as accessing data from js objects
+    -with the help of(dot(.)operator) and brackets([])
+
+----------------------------------------------------------------
+Object Methods:
+        1.Object.keys()--fetch all the keys
+        2.Object.values()--fetch all the values
+        3.Object.entries()--fetch all the key value pairs
+
+--------------------------------------------------------------
+Merge JSON Objects:
+    - it is same as merging js objects
+    - with the help of spread operator(...)
+    - with the help of Object.assign()
+----------------------------------------------------------------
+Add JSON Properties:
+    -with the help of dot(.)operator
+    -with the help of square brackets([])
+    -with the help of Object.assign()
+---------------------------------------------------------------
+Delete JSON Properties:
+    -with the help of dot(.)operator
+    -with the help of square brackets([])
+    -with the help of delete keyword
+---------------------------------------------------------------
+Iterate JSON Objects:(consist list of key value pairs)
+    -with the help of for  loop
+    -with the help of foreach  loop
+ Iterate key in json object:
+ let json1={
+     "key1":"value1",
+     "key2":"value2",
+ }
+    1.for loop
+syntax;
+//iterating only keys
+for(let key in json1){
+    console.log(key);
+}
+//iterating keys and values
+for(let key in json1){
+    console.log(json1[key] - key);
+}
+
+2.foreach loop
+syntax:
+//iterating only keys
+json1.forEach((key)=>{
+    console.log(key);
+})
+//iterating keys and values
+json1.forEach((key)=>{
+    console.log(json1[key] - key);
+})
+//iterating keys and values with Object
+Object.entries(json1).forEach((key)=>{
+    console.log(key, json1[key]);
+})
+
+--------------------------------------------------------
+Destructuring JSON Objects:
+    -it is same as destructuring js objects
+    -it is a super way of accessing data from json objects
+    -it makes code more cleaner,shorter,readable and maintainable
+    -it helps to make renaming of variables easy
+    -it helps to assign default values to variables
+
+const user={
+    "name":"John",
+    "age":30,
+    "city":"New York"
+}
+//without destructuring
+  let UserName=user.name;
+  let UserAge=user.age;
+  console.log(UserName ,UserAge);
+
+ // with destructuring
+ const{name,age}=user; 
+ console.log(name,age);
+ -----------------------------------------------------------
+ DAY-21
+ Array :
+       1.Array is a collection of items
+       2.Array is a list of items/values
+       3.It is used to store multiple values in a single variable
+       4.Array is a mutable(modify after creation) data type
+       5.Array is a dynamic data type
+       6.It can hold values/items like number,string,objects etc...
+       7.Is is denoted by []
+       8.Array is a ordered collection of items
+ex:
+
+              let arr1=[10,20,30,50];
+index positions:        0  1  2  3
+length -4  
+-----------------------------------------------------------------------
+Array Creation:
+    1.Array literal
+    2.Array constructor
+    3.Array.from()
+    4.Array.of()
+1.Array literal:
+        let arr1=[10,20,30,50];
+2.Array constructor:
+        let arr2=new Array(10,20,30,50);
+        let arr3=new Array(5);[_,_,_,_,_]
+3.Array.from():
+        let StringData='hello';
+        let charArr=Array.from(StringData);
+        -it is used to convert string, sets to array
+4.Array.of():
+        let numArr=Array.of(10,20,30,50);
+        -it is used to create new array from a set of values
+
+-----------------------------------------------------------------
+accessing data from array:
+       1.Array indexing
+       2.Array methods
+------------------------------------------------------------------
+updating/modifying data in array:
+       1.Array indexing
+       2.Array methods
+
+------------------------------------------------------------------
+Adding elements to an array:
+       1.Array indexing
+       2.Array methods:
+                     1.push()-add element at the end
+                     2.unshift()-add element at the beginning
+---------------------------------------------------------------
+removing elements from an array:
+       1.Array indexing
+       2.Array methods:
+                     1.pop()-remove element from the end
+                     2.shift()-remove element from the beginning
+---------------------------------------------------------------
+ArrayMethods:
+
+ 1.at():
+ +++++++   
+        -it is used to access an element at a specific index   
+        -it will accept positive index and negative index
+-----------------------------------------------------------------------
+ 2.map()
+ ++++++++
+        -it is used to create a new array by performing a specific
+          operation on each element of an existing array
+       -it returns a new array
+       -it wont change the original array
+       -it takes a function as an argument
+       -it is used to data transferring
+       -it is an example of higher order function and introduced in Es5
+       
+syntax:
+    map(element ,index,array){
+      return element;
+    }
+element: value of an array
+index: index of an array(optional)
+array: original array(optional)
+-------------------------------------------------------------------
+3.filter()
+ ++++++++
+        -it is used to create a new array by keeping the elements
+          of an existing array for which a specific condition is true
+        -it returns a new array
+        -it wont change the original array
+        -it takes a function as an argument
+        -it is an example of higher order function and introduced in Es5
+syntax:
+    filter(element ,index,array){
+      return element;
+}
+index and array is optional
+-------------------------------------------------------------------
+4.reduce()
+++++++++++
+        -it is used to create a new array by performing a specific
+          operation on each element of an existing array
+        -it returns a single value
+        -it wont change the original array
+        -it takes a function as an argument
+        -it is an example of higher order function and introduced in Es9
+syntax:
+
+array.reduce((accumulator, currentValue, index, array) => {
+    return accumulator;
+}, initialValue);
+
+accumulator: it is used to store the result of the previous iteration
+currentValue: it is used to store the current element of the array
+index: index of an array(optional)
+array: original array(optional)
+initialValue: it is used to provide a default value for the accumulator
+             (optional but recommended)
+------------------------------------------------------------------------------------
+5.includes()
+++++++++++
+        -it is used to check if an element is present in an array
+        -it returns a boolean value
+syntax:
+array.includes(element,fromIndex);
+element: value of an array
+fromIndex: index of an array(optional), default value is 0
+---------------------------------------------------------------
+6.find()
++++++++++++
+        -it is used to return the first element of an array that
+        satisfies a specific condition
+        -it returns a single value i.e first result
+        -it introduced in es6
+syntax
+
+array.find((element,index,array)=>{
+    return element;
+})
+index and array are optional
+--------------------------------------------------------------------
+7.every()
+++++++++++
+        -it is used to check if all the elements of an array 
+        satisfy a specific condition
+        -it returns a boolean value
+        -it introduced in es6
+syntax
+array.every((element,index,array)=>{
+    return element;
+})
+-------------------------------------------------------------------
+       splice()
+       findIndex()
+       some()
+       reverse()
+       toString()
+       Array.form()
+       join()
+       slice()
+       flat()
+       flatMap()
+       forEach()
+       for of()
+       for in()
+       indexOf()
+       fill()
+       length()
+       delete()
+       push()
+       unShift()
+       pop()
+       shift()
+       padStart()
+       padEnd()
+       trimStart()
+       trimEnd()
+       trim()
+       sort()
+       reduceRight()
+       lastIndexOf()
+       copyWithIn()
+       repeat()
+       split()
+       subString()
+       substr()
+       replace()
+
+splice():
+++++++++
+      -it is used to add or remove elements from an array
+      -it returns an array
+      -it changes the original array
+
+syntax:
+
+array.splice(start,deleteCount,element1,element2,element3,....elementN);
+start: it is used to specify the starting index
+deleteCount: it is used to specify the number of elements to be removed(optional)
+element1,element2,element3,....elementN: 
+           it is used to specify the elements to be added(optional)
+
+
+some():
+++++++
+       -it is used to check if any of the elements of an array
+         satisfy a specific condition
+       -it returns a boolean value
+       -it introduced in es6
+syntax:
+
+array.some((element,index,array)=>{
+    //condition
+       return element;
+})
+
+-------------------------------------------------------------------
+
+         forEach()             map()                   filter()
+--------------------------------------------------------------------
+use:     loop through      loop through              loop through 
+        the array          the array                  the array 
+
+purpose  iterates          process/transform the data    filter the data
+
+returns    nothing         returns a new array       returns a new array
+
+modify
+original   no                 no                          no
+array
+
+-------------------------------------------------------------------
+ 
+ 
+ 
+               for..of                     for..in
+-------------------------------------------------------------------
+loop            yes                         yes
+
+returns         value of each element       key of each element
+
+modify          no                          no
+
+loop over      element/value                 index/keys
+
+useCase:      array/Strings                  objects
+
+
+---------------------------------------------------------------------
+ 
+ 
+                  indexOf()            findIndex()         includes()
+--------------------------------------------------------------------
+matchType          exactMatch          partialMatch        exactMatch
+
+returns            index or -1         index or -1         boolean
+
+work with objects   yes                 no                  yes
+
+---------------------------------------------------------------------
+
+
+   length()   -- it returns size of an array
+   push()     -- it is used to add element at the end
+   unShift()  -- it is used to add element at the beginning
+   pop()      -- it is used to remove element from the end
+   shift()    -- it is used to remove element from the beginning
+      
+DAY-23-------------------------------------------------------
+BOM:(browser object model)
+----
+    -it is a collection of objects that represent the browser environment
+    -it provides access to the browser window and document 
+    -It access specific features of the browser such as navigation, location, history, and more
+use cases:
+       1.redirect to another page
+       2.open a new window/tab
+       3.browser alerts
+       4.Access browser info
+       5.Access browser history
+       6.Access browser location
+       7.Access browser navigation
+       8.Access browser cookies(session)
+       9.Handling timeouts and intervals
+
+
+DOM:(document object model)
+----
+    -It represents the structure of the HTML document and its content as a tree of objects
+    -it is a collection of objects that represent the HTML document
+    -it provides access to the HTML elements and their properties
+    -It manipulates the HTML document and Css
+
+use cases:
+      1.creating dynamic web pages
+      2.manipulating the HTML document
+      3.creating interactive web pages
+      4.providing Css
+      5.providing Js
+      6.create or removing elements
+      7.Handling events
+
+ 
+                         DOM                                        BOM
+--------------------------------------------------------------------------------
+purpose         interact with the HTML document          interact with the browser
+
+Main Object     document                                 window
+
+---------------------------------------------------------------------------------
+
+DOM Manipulation:
+++++++++++++++++++
+           1.Element accessing
+           2.Element creation
+           3.Element removal
+           4.Element modification/Manipulation
+           5.Attribute Manipulation
+           6.Css Manipulation
+           7.Event Manipulation/Handling
+
+1.Element accessing
+             - accessing element by DOM methods
+      1.getElementById() -- accessing element by id(unique) -->returns single element
+      2.getElementsByClassName() -- accessing element by class name-->returns multiple elements
+      3.getElementsByTagName() -- accessing element by tag name->returns multiple elements
+      4.querySelector()--accessing element by css selector(first match)-->returns single element
+      5.querySelectorAll()-->accessing element by css selector(all matches)-->returns multiple elements
+
+--------------------------------------------------------------------------
+2.Element creation
+             - creating element by DOM methods
+      1.createElement()
+                --> creating element by tag name
+                -->returns single element
+                -->it creates content in memory
+                -->to appear in document we need to use
+                        1.appendChild()
+                        2.insertBefore()
+                        3.replaceChild()
+                        4.prepend()
+------------------------------------------------------------------------------
+3.Element Manipulation
+             - modifying element by DOM methods
+        1.appendChild() -- adding element at the end
+        2.insertBefore() -- adding element at the position(sibling element)
+        3.replaceChild() -- replacing element
+        4.prepend()-- adding element at the beginning
+        5.removeChild() -- removing element
+        6.cloneNode()-- cloning element
+
+
+                     appendChild()          insertBefore()          prepend()
+----------------------------------------------------------------------------------
+parent  tag               yes                         yes                     yes
+
+sibling tag               no                          yes                     no
+
+where it inserts         at the end        at the position          at the beginning
+
+------------------------------------------------------------------------------------
+Attribute Manipulation:
+             - modifying attribute by DOM methods
+        1.setAttribute() -- adding attribute
+        2.removeAttribute() -- removing attribute
+        3.getAttribute() -- accessing attribute
+        4.hasAttribute() -- checking attribute presence
+----------------------------------------------------------------------------------
+Css Manipulation:
+             - modifying Css by DOM methods
+        1.style -- adding Css
+        2.getComputedStyle() -- accessing Css
+        3.classList.add() -- adding class
+        4.classList.remove() -- removing class
+        5.classList.toggle() -- toggling class
+        6.classList.contains() -- checking class presence
+----------------------------------------------------------------------------------
+
+Css Manipulation:
+             - modifying Css by DOM methods
+        1.style -- adding Css(inline css)
+        2.getComputedStyle() -- accessing Css
+        3.classList.add() -- adding class
+        4.classList.remove() -- removing class
+        5.classList.toggle() -- toggling class(add or remove/on or off)
+        6.classList.contains() -- checking class presence
+-----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+function:
+   -block of code that performs a specific task
+   -it is a re-usable block of code
+   -it is a collection of statements that performs a task
+   -we can call function multiple times for executing the same task
+event:
+   -event is an action that occurs in the browser
+   -event is a signal/notification that something has happened
+   -used to handle user interactions
+useCases: 
+    1.click events
+    2.mouse events
+    3.key events
+    4.scroll events
+    5.form events etc 
+----------------------------------------------------------------
+Event Handling:
+             - handling events by DOM methods
+             - used to handle user interactions 
+             - it is a code(function) that is executed when an event occurs
+        
+        1.addEventListener() -- adding event listener
+        2.removeEventListener() -- removing event listener
+        3.dispatchEvent() -- dispatching event
+-----------------------------------------------------------------------
+Event bubbling:
+             - event propagation in the DOM
+             - event is propagated from child to parent
+             DOM
+             |
+             Root Element
+             |
+             head body
+                  |
+                  div outside
+                  |
+                  div inside
+                  |
+                  button
+ex: button--->div(inside)--->div(outside)--->body--->html--->document
+-----------------------------------------------------------------------
+
+Event bubbling:
+       button-->div(inside)-->div(outside)
+Event capturing/trickling:
+       div(outside)-->div(inside)-->button
+       - event is propagated from parent to child
+       -default propagation is from child to parent
+       -to achieve event capturing, we can use addEventListener() 
+       method with third argument as true
+-------------------------------------------------------------------
+closuers:
+-----------------------
+    -it is a function that has access to the parent scope
+    -it can access the variables and functions of the parent scope
+    -it is a special kind of function , it allows a function to remember 
+    and access the variables and functions of its parent scope(outer function)
+
+Use case: 
+    -it is used to create private variables and functions
+    -Data Hiding(encapsulation)
+----------------------------------------------------------------------
+this:
++++++
+     -it is a keyword that refers to the current object
+     -it is used to access the properties and methods 
+      of the current object
+----------------------------------------------------------------------
+
+extensions:
+
+git hub codespaces
+git hub pull request
+git hub repositories
+
+
+remote explorer-->allow-->authorize vscode
+
+---------------------------------------------------------------------
+call():
+-------
+    -it is a method that is used to call a function
+    -when you need to invoke a function immediately with
+     a specific value(this)
+     -pass arguments to a function as a value
+------------------------------------------------------------------------
+apply():
+-------
+    -it is a method that is used to call a function
+    -when you need to invoke a function immediately with
+     a specific value(this)
+     -pass arguments to a function as an array
+----------------------------------------------------------------------
+bind():
+------
+    -it is a method that is used to call a function
+    -used when we want to create new function with a specific value
+     but not execute immediately
+
+differences between call() and apply() and bind():
+------------------------------------------------------------------
+
+           call()            apply()           bind()
+---------------------------------------------------------------------
+args       value             array             value
+this       current object    current object    current object
+           (invoked)         (invoked)         (return function)
+--------------------------------------------------------------------------   
+
+     
+       
